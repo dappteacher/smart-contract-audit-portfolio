@@ -1,66 +1,132 @@
-## Foundry
+# Smart Contract Audit Portfolio
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**Author:** Jacob (Yaghoub) Adelzadeh
+**Focus:** Solidity Security • DeFi Protocol Analysis • Smart Contract Auditing
 
-Foundry consists of:
+---
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Overview
 
-## Documentation
+This repository documents my **smart contract security research and manual auditing practice** across major Solidity-based protocols and DeFi systems.
 
-https://book.getfoundry.sh/
+The goal is to demonstrate a **professional security auditing workflow**, including:
 
-## Usage
+* protocol architecture analysis
+* attack surface identification
+* adversarial threat modeling
+* vulnerability research
+* proof-of-concept exploit thinking
+* structured audit reporting
 
-### Build
+This repository serves as a **public audit portfolio** showcasing my methodology, research process, and findings while reviewing real-world protocols.
 
-```shell
-$ forge build
+---
+
+## Audited Protocols (Research Targets)
+
+| Protocol    | Category   | Status      |
+| ----------- | ---------- | ----------- |
+| Uniswap V2  | AMM / DEX  | In Progress |
+| Compound V2 | Lending    | Planned     |
+| Aave V2     | Lending    | Planned     |
+| MakerDAO    | Stablecoin | Planned     |
+| Curve       | AMM        | Planned     |
+
+---
+
+## Repository Structure
+
+```
+smart-contract-audit-portfolio
+
+audits/
+    protocol-specific research
+
+reports/
+    full audit-style reports
+
+checklists/
+    reusable security audit checklists
+
+methodology/
+    auditing framework and severity model
+
+assets/
+    diagrams and supporting material
 ```
 
-### Test
+---
 
-```shell
-$ forge test
+## Audit Methodology
+
+The review process used in this repository follows a structured security workflow:
+
+1. Scope definition
+2. Protocol architecture analysis
+3. State transition review
+4. Attack surface mapping
+5. Vulnerability analysis
+6. Proof-of-concept design
+7. Severity classification
+8. Security reporting
+
+Full methodology:
+
+```
+methodology/audit-methodology.md
 ```
 
-### Format
+---
 
-```shell
-$ forge fmt
-```
+## Security Focus Areas
 
-### Gas Snapshots
+Common vulnerability classes reviewed during audits include:
 
-```shell
-$ forge snapshot
-```
+* reentrancy vulnerabilities
+* access control failures
+* flash loan attack vectors
+* oracle manipulation
+* accounting inconsistencies
+* unsafe external calls
+* upgradeability risks
+* governance manipulation
 
-### Anvil
+---
 
-```shell
-$ anvil
-```
+## Tools Used
 
-### Deploy
+Security research in this repository may involve the following tools:
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+* **Foundry** – testing and fuzzing
+* **Slither** – static analysis
+* **Echidna** – property-based fuzzing
+* **Mythril** – symbolic analysis
 
-### Cast
+---
 
-```shell
-$ cast <subcommand>
-```
+## Purpose of This Repository
 
-### Help
+This project exists to:
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+* build a **public smart contract auditing portfolio**
+* practice **real-world DeFi protocol security analysis**
+* document **vulnerability patterns and attack surfaces**
+* demonstrate **professional audit reporting**
+
+---
+
+## Disclaimer
+
+All content in this repository is for **educational and research purposes only**.
+
+Some issues discussed may already be known or previously disclosed.
+The goal of this repository is to demonstrate **security reasoning and auditing methodology**, not to claim novel discoveries.
+
+---
+
+## Contact
+
+If you are interested in collaboration, smart contract security discussions, or audit services:
+
+LinkedIn:
+https://www.linkedin.com/in/dappteacher

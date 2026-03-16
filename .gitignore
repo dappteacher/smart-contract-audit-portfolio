@@ -1,14 +1,19 @@
-# Compiler files
+# Foundry
 cache/
 out/
+broadcast/
 
-# Ignores development broadcast logs
-!/broadcast
-/broadcast/*/31337/
-/broadcast/**/dry-run/
-
-# Docs
-docs/
-
-# Dotenv file
+# Environment
 .env
+.env.*
+
+# Dependencies
+lib/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
